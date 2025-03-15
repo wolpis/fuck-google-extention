@@ -21,6 +21,7 @@
                 "modules/rickLink.js",
                 "modules/pokbal.js",
                 "modules/jusa.js",
+                "modules/ota.js",
                 "content.js"
             ]
         }

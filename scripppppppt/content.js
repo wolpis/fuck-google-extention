@@ -1,4 +1,4 @@
-const features = ['kururing', 'randomSearch', 'rickLink', 'rickImage', 'pokbal', 'jusa']
+const features = ['kururing', 'randomSearch', 'rickLink', 'rickImage', 'pokbal', 'jusa', 'ota']
 
 const actions = {
     kururing: { on: activateKururing, off: deactivateKururing },
@@ -6,6 +6,7 @@ const actions = {
     rickLink: { on: activateRickLink, off: deactivateRickLink },
     rickImage: { on: activateRickImage, off: deactivateRickImage },
     jusa: { on: activateJusa, off: deactivateJusa },
+    ota: { on: activateOta, off: deactivateOta },
     pokbal: { on: activatePokbal, off: deactivatePokbal },
 };
 
