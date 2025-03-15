@@ -1,9 +1,11 @@
 {
     "manifest_version": 3,
     "name": "FALG Extention",
+    "description": "쓸모는 조금도 없지만 재미있는 구글 익스텐션 제작",
     "version": "1.0",
     "permissions": [
         "storage",
+        "tabs",
         "scripting"
     ],
     "options_page": "options/options.html",
@@ -15,20 +17,21 @@
             "js": [
                 "modules/kururing.js",
                 "modules/randomSearch.js",
-                "modules/rickLink.js",
                 "modules/rickImage.js",
+                "modules/rickLink.js",
+                "modules/pokbal.js",
                 "content.js"
             ]
         }
     ],
+    "background": {
+        "service_worker": "background.js"
+    },
     "icons": {
         "128": "icons/icon.png"
     },
     "action": {
         "default_icon": {
-            "16": "icons/icon.png",
-            "32": "icons/icon.png",
-            "48": "icons/icon.png",
             "128": "icons/icon.png"
         }
     }

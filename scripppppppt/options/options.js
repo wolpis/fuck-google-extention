@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const features = ['kururing', 'randomSearch', 'rickLink', 'rickImage'];
+    const features = ['kururing', 'randomSearch', 'rickLink', 'rickImage', 'pokbal'];
 
-    // 초기 상태 로드 및 UI 반영
     chrome.storage.sync.get(features, (data) => {
         features.forEach(feature => {
             const checkbox = document.getElementById(feature);
@@ -9,17 +8,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 체크박스 변경 시 크롬 스토리지 저장만 하면 됨.
     features.forEach(feature => {
         const checkbox = document.getElementById(feature);
-        checkbox.addEventListener('change', () => {
-            chrome.storage.sync.set({ [feature]: checkbox.checked });
-        });
+        if (checkbox) { // ⚠️ 안전장치 추가
+            checkbox.addEventListener('change', () => {
+                chrome.storage.sync.set({ [feature]: checkbox.checked });
+            });
+        }
     });
 });
 
+
 document.addEventListener('DOMContentLoaded', () => {
-    const features = ['kururing', 'randomSearch', 'rickImage', 'rickLink'];
+    const features = ['kururing', 'randomSearch', 'rickImage', 'rickLink', 'pokbal'];
 
     chrome.storage.sync.get(features, (data) => {
         features.forEach(feature => {
