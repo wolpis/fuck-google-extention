@@ -12,8 +12,8 @@
 
 > [소스 다운받기](https://github.com/wolpis/funny-google-extention/archive/refs/heads/main.zip)<br>
 > **현재 구글 웹스토어에 심사를 받는 중 이므로 직접 설치를 통한 체험만 가능합니다!**<br>
-> [자세한 설치법은 여기를 참조해주세요!]()<br>
-> [English Version!]()<br>
+> [자세한 설치법은 여기를 참조해주세요!](https://github.com/wolpis/funny-google-extention/blob/main/install_KR.md)<br>
+> [English Version!](https://github.com/wolpis/funny-google-extention/blob/main/README_EN.md)<br>
 
 ## 기능 소개
 ### 1. 쿠루쿠루쿠루링
