@@ -31,7 +31,7 @@ This policy may be updated as necessary. Any significant changes will be announc
 ## 8. Contact
 If you have any questions or concerns regarding this Privacy Policy, please contact us at:
 
-Email: star@devksy.xyz
+Email: d3vksy@gmail.com
 
 ---
 This Privacy Policy is designed to protect user data and ensure transparency.
@@ -72,7 +72,7 @@ This Privacy Policy is designed to protect user data and ensure transparency.
 ## 8. 문의
 개인정보 보호 정책에 대한 질문이나 우려 사항이 있는 경우 아래 이메일로 문의해 주세요.
 
-이메일: star@devksy.xyz
+이메일: d3vksy@gmail.com
 
 ---
 본 개인정보 보호 정책은 사용자의 개인정보를 보호하고 투명성을 제공하기 위해 마련되었습니다.
