@@ -1,30 +1,50 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const kururingCheckbox = document.getElementById('kururing');
-    const randomLinkCheckbox = document.getElementById('randomLink');
-    const saveBtn = document.getElementById('save-btn');
+    const features = ['kururing', 'randomSearch', 'rickLink', 'rickImage'];
 
-    // 초기 상태 로드
-    chrome.storage.sync.get(['kururing', 'randomLink'], (data) => {
-        kururingCheckbox.checked = data.kururing || false;
-        randomLink.checked = data.randomLink || false;
+    // 초기 상태 로드 및 UI 반영
+    chrome.storage.sync.get(features, (data) => {
+        features.forEach(feature => {
+            const checkbox = document.getElementById(feature);
+            if (checkbox) checkbox.checked = data[feature] || false;
+        });
     });
 
-    // 저장하기 버튼 클릭 시
-    saveBtn.addEventListener('click', () => {
-        chrome.storage.sync.set({
-            kururing: kururingCheckbox.checked,
-            randomLink: randomLinkCheckbox.checked
-        }, () => {
-            alert('설정이 저장되었습니다.');
-
-            chrome.tabs.query({}, (tabs) => {
-                tabs.forEach(tab => {
-                    chrome.tabs.sendMessage(tab.id, {
-                        kururing: kururingCheckbox.checked,
-                        randomLink: randomLink.checked
-                    });
-                });
-            });
+    // 체크박스 변경 시 크롬 스토리지 저장만 하면 됨.
+    features.forEach(feature => {
+        const checkbox = document.getElementById(feature);
+        checkbox.addEventListener('change', () => {
+            chrome.storage.sync.set({ [feature]: checkbox.checked });
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const features = ['kururing', 'randomSearch', 'rickImage', 'rickLink'];
+
+    chrome.storage.sync.get(features, (data) => {
+        features.forEach(feature => {
+            const checkbox = document.getElementById(feature);
+            if (checkbox) checkbox.checked = data[feature] || false;
+        });
+    });
+
+    features.forEach(feature => {
+        const checkbox = document.getElementById(feature);
+        checkbox.addEventListener('change', () => {
+            chrome.storage.sync.set({ [feature]: checkbox.checked });
+
+            // OFF로 바꿀 때 랜덤 팝업 표시
+            if (!checkbox.checked && Math.random() < 0.1) {
+                document.getElementById('popup').style.display = 'block';
+            }
+        });
+    });
+
+    const popupConfirmBtn = document.getElementById("popup-confirm-btn");
+    if (popupConfirmBtn) {
+        popupConfirmBtn.addEventListener("click", () => {
+            document.getElementById("popup").style.display = "none";
+        });
+    }
+});
+

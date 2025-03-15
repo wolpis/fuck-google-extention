@@ -3,17 +3,52 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>옵션 페이지</title>
     <link rel="stylesheet" href="options.css">
-    <title>Kururing 옵션</title>
 </head>
 
 <body>
-    <h2>익스텐션 옵션 설정</h2>
-    <div class="toggle-container">
-        <label><input type="checkbox" id="kururing"> Kururing 활성화</label>
-        <label><input type="checkbox" id="randomLink"> 랜덤 링크 활성화</label>
+    <div class="overlay"></div>
+
+    <div class="container">
+        <div class="card">
+            <h2>Kururing</h2>
+            <img src="images/Kururing.gif" alt="Kururing icon">
+            <label>
+                <input type="checkbox" id="kururing">
+                <span class="toggle-text">Kururing 활성화</span>
+            </label>
+        </div>
+
+        <div class="card">
+            <h2>Random Search</h2>
+            <img src="images/Random Search.gif" alt="Random Search icon">
+            <label>
+                <input type="checkbox" id="randomSearch">
+                <span class="toggle-text">Random Search 활성화</span>
+            </label>
+        </div>
+
+        <div class="card">
+            <h2>RickRoll (Image)</h2>
+            <img src="images/RickRoll.gif" alt="RickRoll icon">
+            <label>
+                <input type="checkbox" id="rickImage">
+                <span class="toggle-text">이미지 활성화</span>
+            </label>
+            <label>
+                <input type="checkbox" id="rickLink">
+                <span class="toggle-text">링크 활성화</span>
+            </label>
+        </div>
     </div>
-    <button id="save-btn">저장하기</button>
+
+    <!-- 팝업 메시지 -->
+    <div class="popup" id="popup" style="display:none; z-index: 999;">
+        <img src="images/hu.png" alt="Warning">
+        <p>진짜 끌 거야?</p>
+        <button id="popup-confirm-btn">확인</button>
+    </div>
 
     <script src="options.js"></script>
 </body>

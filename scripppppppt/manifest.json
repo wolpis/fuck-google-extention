@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Kururing Extension",
+    "name": "FALG Extention",
     "version": "1.0",
     "permissions": [
         "storage",
@@ -14,9 +14,22 @@
             ],
             "js": [
                 "modules/kururing.js",
-                "modules/randomrink.js",
+                "modules/randomSearch.js",
+                "modules/rickLink.js",
+                "modules/rickImage.js",
                 "content.js"
             ]
         }
-    ]
+    ],
+    "icons": {
+        "128": "icons/icon.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "icons/icon.png",
+            "32": "icons/icon.png",
+            "48": "icons/icon.png",
+            "128": "icons/icon.png"
+        }
+    }
 }
