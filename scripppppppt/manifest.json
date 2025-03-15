@@ -20,6 +20,7 @@
                 "modules/rickImage.js",
                 "modules/rickLink.js",
                 "modules/pokbal.js",
+                "modules/jusa.js",
                 "content.js"
             ]
         }

@@ -1,11 +1,12 @@
-const features = ['kururing', 'randomSearch', 'rickLink', 'rickImage', 'pokbal'];
+const features = ['kururing', 'randomSearch', 'rickLink', 'rickImage', 'pokbal', 'jusa']
 
 const actions = {
     kururing: { on: activateKururing, off: deactivateKururing },
     randomSearch: { on: activateRandomSearch, off: deactivateRandomSearch },
     rickLink: { on: activateRickLink, off: deactivateRickLink },
     rickImage: { on: activateRickImage, off: deactivateRickImage },
-    pokbal: { on: activatePokbal, off: deactivatePokbal }
+    jusa: { on: activateJusa, off: deactivateJusa },
+    pokbal: { on: activatePokbal, off: deactivatePokbal },
 };
 
 // 초기 적용

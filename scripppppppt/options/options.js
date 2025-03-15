@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const features = ['kururing', 'randomSearch', 'rickLink', 'rickImage', 'pokbal'];
+    const features = ['kururing', 'randomSearch', 'rickLink', 'rickImage', 'pokbal', 'jusa']
 
     chrome.storage.sync.get(features, (data) => {
         features.forEach(feature => {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const features = ['kururing', 'randomSearch', 'rickImage', 'rickLink', 'pokbal'];
+    const features = ['kururing', 'randomSearch', 'rickImage', 'rickLink', 'pokbal', 'jusa']
 
     chrome.storage.sync.get(features, (data) => {
         features.forEach(feature => {
