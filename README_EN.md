@@ -12,8 +12,8 @@
 
 > [Download Source](https://github.com/wolpis/funny-google-extention/archive/refs/heads/main.zip)<br>
 > **Currently under review on the Google Web Store, so you can only install and try it manually!**<br>
-> [Check here for detailed installation instructions!]()<br>
-> [Korean Version!]()<br>
+> [Check here for detailed installation instructions!](https://github.com/wolpis/funny-google-extention/blob/main/install_EN.md)<br>
+> [Korean Version!](https://github.com/wolpis/funny-google-extention/blob/main/README.md)<br>
 
 ## Features  
 ### 1. Kurukuru Kururing  
